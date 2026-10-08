@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <style>
+        div {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <input type="text" id="name" placeholder="Enter a name ...">
+        <button id="add">Submit</button>
+        <button id="del">delete</button>
+        <p id="names" style="font-size: 30px;"></p>
+
+    </div>
+
+</body>
+<script>
+    var students = []
+
+
+
+    document.getElementById("add").addEventListener("click", function () {
+
+        var studentName = document.getElementById("name").value
+
+        students.push(studentName)
+        document.getElementById("names").innerHTML = students
+        document.getElementById("name").value = ""
+    })
+
+    document.getElementById("del").addEventListener("click", function () {
+
+        students.pop();
+        document.getElementById("names").innerHTML = students
+
+
+        // option 2 :
+        // students.reverse();
+        // students.shift();
+        //  students.reverse();
+        document.getElementById("names").innerHTML = students
+
+
+
+    })
+
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            #students {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="students"></p>
+    </body>
+    <script>
+        // var st = "Yarob"
+        // var st2 = "Ahamd"
+        // var st3 = "khaled"
+        // var st4 = "Melham"
+        // var st5 = "omar"
+        // document.getElementById("name").innerHTML= "my name is :" +st+"---"
+        // document.getElementById("name").innerHTML+= "my name is :" +st2+"---"
+        // document.getElementById("name").innerHTML+= "my name is :" +st3+"---"
+        // document.getElementById("name").innerHTML+= "my name is :" +st4+"---"
+        // document.getElementById("name").innerHTML+= "my name is :" +st5+"---"
+
+        var students = ["Yarob","Khaled","Muhammed","Omar","Ali"]
+        document.getElementById("students").innerHTML = students
+        students.push("Salem")  
+        students[1] = "Ammar"
+        students.pop()
+          students.pop()
+            students.pop()
+              students.pop()
+        console.log(students);
+        
+        // console.log(typeof students); OBJECT
+        
+    </script>
+</html>

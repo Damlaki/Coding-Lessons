@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            #students {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p id="students"></p>
+    </body>
+    <script>
+            var students = ["Yarob","Khaled","Muhammed","Omar","Ali"]
+            document.getElementById("students").innerHTML = students
+
+            students.push("Salem")  
+            students[1] = "Ammar"
+            students.pop()
+            students.pop()
+                students.pop()
+                students.pop()
+            console.log(students);
+            
+        // console.log(typeof students); OBJECT
+        
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#text,#bottom {
+    text-align: center ;
+}
+
+</style>
+<body>
+    <div id="text">
+        <h1>Vowel Letters: (A,E,I,O,U)</h1>
+    </div>
+
+    <div id="bottom">
+        <input type="text" id="string-input"> 
+        <button id="submit"> Submit</button>
+        
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function() {
+            var text = document.getElementById("string-input").value;
+            console.log(text);
+        })
+    </script>
+</body>
+</html>

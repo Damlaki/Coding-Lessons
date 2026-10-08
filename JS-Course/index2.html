@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h2>Enter your text:</h2>
+    <input type="text" id="userInput" >
+    <button onclick="
+      var text = document.getElementById('userInput').value;
+      var original = text;
+      var upper = text.toUpperCase();
+      var replaced = upper.replace('O','Y');
+      var reversed = replaced.split('').reverse().join('');
+      var outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = 'Original: ' + original + '<br>' +
+                            'Uppercase: ' + upper + '<br>' +
+                            'Replaced O→Y: ' + replaced + '<br>' +
+                            'Reversed: ' + reversed;
+    ">Transform</button>
+
+    <div class="result" id="output"></div>
+  </body>
+</html>

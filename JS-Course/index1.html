@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- <h2 id="title">Hello World</h2> -->
+         <input id="string-input" type="text">
+         <button id="submit-btn">submit</button>
+        <h2 id="result"></h2>
+        
+
+    </body>
+    <script>
+            document.getElementById("submit-btn").addEventListener("click", function(){
+            // console.log("click")
+            var text = document.getElementById("string-input").value
+            console.log(text);
+            
+            var upper = text.toUpperCase();
+            var replaced = upper.replace("O","Y");
+            var reversed =  replaced.split("").reverse().join("");
+            document.getElementById("result").innerHTML = `${upper} ---- ${replaced} ---- ${reversed}`
+        })
+                
+    </script>
+</html>

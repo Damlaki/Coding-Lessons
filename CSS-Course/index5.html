@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            #t-image{
+                max-width: 50%;
+                max-width: 50%;
+            }
+            #text {
+                background-color: black;
+                color: yellow;
+                position:fixed;
+                top: 0;
+                left: 0;
+                
+            }
+           /*if the position : 
+            1-Static : the top,right,left,... are useless because the position will be mesured like the flow 
+           .2-relative : the top,left,bottom,...will be mesured by the other element if it static then it will count the distance, نقطة الانطلاق هي مكان وجوده حسب الفلو في الستاتيك  
+           .3-absoloute : the same of the relative but the other element should not be static,it will be connected with the closet element like body or in a div 
+           .4-fiexd: it will mesure the distances according to the screen*/
+
+
+        </style>
+    </head>
+    <body>
+        <img id="t-image" src="spong.jpeg">
+        <h2 id="text">Ahmad Channel</h2>
+        <h3 style="height: 700px; background-color: red;">Hello</h3>
+        
+    </body>                     
+</html>

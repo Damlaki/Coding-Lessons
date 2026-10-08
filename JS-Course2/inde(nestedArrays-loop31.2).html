@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="multiTable" style="text-align: center;"></h1>
+    
+
+</body>
+<script>
+    var number = [1,2,3,4,5,6,7,8,9,10]
+    var multiplier = [1,2,3,4,5,6,7,8,9,10]
+
+   for (var i = 0 ; i <number.length; i++) {
+    document.getElementById("multiTable").innerHTML += "<br>" + "Multiplication Table of " + number[i] + "<br>"  + "<br>"
+
+    for (var j =0; j <multiplier.length; j++) {
+        document.getElementById("multiTable").innerHTML += number[i] + " X " + multiplier[j] + " = " + (number[i] * multiplier[j]) + "<br>"
+    }
+   }
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="student" style="text-align: center;"></h1>
+</body>
+<script>
+    var students = [ 
+        ["Yarob", "Ahmad", "Khaled"],
+        ["Salem", "Saleem"],
+        ["Jaber", "mohammed"],
+        
+    ]
+
+    for (var i = 0; i < students.length ; i++){
+        
+            document.getElementById("student").innerHTML +=   "<br>"+ "class"+ (i+1) + "<br>"
+        var currentClass = students[i]
+        
+        for (var j = 0 ; j < currentClass.length; j++) {
+            
+            currentStudent = currentClass[j]
+            document.getElementById("student").innerHTML += currentStudent  +  "-"
+            // console.log(currentStudent );
+        }
+        // document.getElementById("student").innerHTML +="class"+ (i+1)+ "<br>" + students[i] + "<br>"
+    }
+
+
+
+    
+    // document.getElementById("student").innerHTML = "class1 <br>" + students[0]
+    
+
+</script>
+    
+    
+</html>

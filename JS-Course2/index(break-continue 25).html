@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center; font-size: 50px;">
+        <div>
+            Find Student 
+            <br>
+            <input type="text" name="" id="student-input">
+            <button id="search">search </button>
+        </div>
+
+        <div id="school" style="font-size: 20px;"></div>
+        <h2 id="result"></h2>
+
+    </div>
+    
+</body>
+
+<script>
+    var school =["Yarob", "Ahmad", "Khaled", "Omar", "Jaber", "Sami", "Salem"]
+    for (var memberIndex = 0; memberIndex <= school.length-1 ;memberIndex++){
+        document.getElementById("school").innerHTML += school[memberIndex] + "--"
+    }
+
+    document.getElementById("search").addEventListener("click", function(){
+        var name = document.getElementById("student-input").value.toUpperCase()
+        
+        
+
+        
+    //     for (var student of school){
+
+    //         var UpperedStudent = student.toUpperCase() 
+    //         if (name == UpperedStudent){
+    //         document.getElementById("result").innerHTML = `${name} is in the school`
+    //         break
+    //     }
+        
+    //     document.getElementById("result").innerHTML = `${name} is not in the school`
+        
+            
+    // }
+
+      for (var student of school){
+
+            var UpperedStudent = student.toUpperCase() 
+            document.getElementById("result").innerHTML = `${name} is not in the school`
+
+            if (name != UpperedStudent){
+                continue // stop this autoration and go to next autoration
+            }
+            
+            document.getElementById("result").innerHTML = `${name} is in the school`
+            break
+            
+    }
+
+
+        
+
+
+    })
+
+
+    //     var isFound = false
+
+
+    //     for (var student of school){
+    //         var UpperedStudent = student.toUpperCase()  
+    //         if (name == UpperedStudent ){
+    //             isFound = true
+    //         }
+    //     }
+
+
+    //     if (isFound == true){
+    //         document.getElementById("result").innerHTML = `${name} is in the school`
+    //     }else {
+    //         document.getElementById("result").innerHTML = `${name} is not in the school`
+    //     }
+
+
+    // })
+    
+    
+</script>
+</html>

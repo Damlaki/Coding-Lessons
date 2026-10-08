@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="school" style="text-align: center; font-size: 30px;"></div>
+</body>
+<script>
+    var school = ["T.Yarob", "T.Ahmad", "Khaled", "Omar", "Jaber"]
+    for (var memberIndex = 0; memberIndex <= school.length-1 ; memberIndex++ ){
+        if (school[memberIndex][0] == "T" && school[memberIndex][1] == "."){
+            document.getElementById("school").innerHTML += school[memberIndex]+ "<br>" 
+
+        }
+        
+    }
+</script>
+</html>
